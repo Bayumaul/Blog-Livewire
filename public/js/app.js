@@ -1,3 +1,12 @@
+window.onload = () => {
+  'use strict';
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('./sw.js');
+  }
+}
+
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -5,7 +14,8 @@
 /*!**********************************************!*\
   !*** ./node_modules/alpinejs/dist/alpine.js ***!
   \**********************************************/
-/***/ (function(module) {
+/***/ 
+(function(module) {
 
 (function (global, factory) {
    true ? module.exports = factory() :
